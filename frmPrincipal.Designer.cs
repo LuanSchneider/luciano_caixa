@@ -53,18 +53,13 @@ namespace luciano_caixa
             this.despesass = new System.Windows.Forms.ToolStripMenuItem();
             this.sair = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.img04 = new System.Windows.Forms.PictureBox();
-            this.img03 = new System.Windows.Forms.PictureBox();
-            this.img01 = new System.Windows.Forms.PictureBox();
-            this.img02 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img04)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img03)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img01)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img02)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -95,20 +90,20 @@ namespace luciano_caixa
             // Menuusuarios
             // 
             this.Menuusuarios.Name = "Menuusuarios";
-            this.Menuusuarios.Size = new System.Drawing.Size(180, 22);
+            this.Menuusuarios.Size = new System.Drawing.Size(135, 22);
             this.Menuusuarios.Text = "usuarios";
             // 
             // Menufuncionario
             // 
             this.Menufuncionario.Name = "Menufuncionario";
-            this.Menufuncionario.Size = new System.Drawing.Size(180, 22);
+            this.Menufuncionario.Size = new System.Drawing.Size(135, 22);
             this.Menufuncionario.Text = "funcionario";
             this.Menufuncionario.Click += new System.EventHandler(this.Menufuncionario_Click);
             // 
             // Menuvendendor
             // 
             this.Menuvendendor.Name = "Menuvendendor";
-            this.Menuvendendor.Size = new System.Drawing.Size(180, 22);
+            this.Menuvendendor.Size = new System.Drawing.Size(135, 22);
             this.Menuvendendor.Text = "fornecedor";
             // 
             // Menu2
@@ -125,7 +120,7 @@ namespace luciano_caixa
             // Menuprodutos
             // 
             this.Menuprodutos.Name = "Menuprodutos";
-            this.Menuprodutos.Size = new System.Drawing.Size(180, 22);
+            this.Menuprodutos.Size = new System.Drawing.Size(128, 22);
             this.Menuprodutos.Text = "produtos";
             this.Menuprodutos.Click += new System.EventHandler(this.Menuprodutos_Click);
             // 
@@ -232,15 +227,9 @@ namespace luciano_caixa
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(583, 4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(217, 20);
-            this.dateTimePicker1.TabIndex = 2;
             // 
             // pictureBox1
             // 
@@ -252,46 +241,61 @@ namespace luciano_caixa
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // img04
+            // label2
             // 
-            this.img04.Image = global::luciano_caixa.Properties.Resources.icons8_produtos_50;
-            this.img04.Location = new System.Drawing.Point(431, 300);
-            this.img04.Name = "img04";
-            this.img04.Size = new System.Drawing.Size(74, 61);
-            this.img04.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.img04.TabIndex = 5;
-            this.img04.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(77, 107);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.TabIndex = 8;
             // 
-            // img03
+            // button1
             // 
-            this.img03.Image = global::luciano_caixa.Properties.Resources.icons8_stock_32;
-            this.img03.Location = new System.Drawing.Point(251, 300);
-            this.img03.Name = "img03";
-            this.img03.Size = new System.Drawing.Size(80, 61);
-            this.img03.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.img03.TabIndex = 4;
-            this.img03.TabStop = false;
+            this.button1.BackColor = System.Drawing.Color.Bisque;
+            this.button1.BackgroundImage = global::luciano_caixa.Properties.Resources.img_icons8;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button1.Location = new System.Drawing.Point(387, 161);
+            this.button1.Name = "button1";
+            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button1.Size = new System.Drawing.Size(80, 94);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Caixa\r\n";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // img01
+            // button2
             // 
-            this.img01.BackgroundImage = global::luciano_caixa.Properties.Resources.img_icons8;
-            this.img01.Image = global::luciano_caixa.Properties.Resources.img_icons8;
-            this.img01.Location = new System.Drawing.Point(251, 179);
-            this.img01.Name = "img01";
-            this.img01.Size = new System.Drawing.Size(80, 71);
-            this.img01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.img01.TabIndex = 3;
-            this.img01.TabStop = false;
+            this.button2.BackgroundImage = global::luciano_caixa.Properties.Resources.icons8_produtos_50;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(301, 175);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(80, 80);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "estoque";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // img02
+            // button3
             // 
-            this.img02.Image = global::luciano_caixa.Properties.Resources.icons8_tag_de_preço_de_venda_64;
-            this.img02.Location = new System.Drawing.Point(431, 179);
-            this.img02.Name = "img02";
-            this.img02.Size = new System.Drawing.Size(74, 71);
-            this.img02.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.img02.TabIndex = 1;
-            this.img02.TabStop = false;
+            this.button3.BackgroundImage = global::luciano_caixa.Properties.Resources.icons8_tag_de_preço_de_venda_64;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button3.Location = new System.Drawing.Point(301, 261);
+            this.button3.Name = "button3";
+            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button3.Size = new System.Drawing.Size(166, 94);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "preço de produtos";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // frmprincipa
             // 
@@ -299,23 +303,21 @@ namespace luciano_caixa
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.img04);
-            this.Controls.Add(this.img03);
-            this.Controls.Add(this.img01);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.img02);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmprincipa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "    ";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img04)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img03)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img01)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img02)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,11 +332,6 @@ namespace luciano_caixa
         private System.Windows.Forms.ToolStripMenuItem Menu3;
         private System.Windows.Forms.ToolStripMenuItem Menu4;
         private System.Windows.Forms.ToolStripMenuItem sair;
-        private System.Windows.Forms.PictureBox img02;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.PictureBox img01;
-        private System.Windows.Forms.PictureBox img03;
-        private System.Windows.Forms.PictureBox img04;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem Menuusuarios;
         private System.Windows.Forms.ToolStripMenuItem Menufuncionario;
@@ -352,6 +349,10 @@ namespace luciano_caixa
         private System.Windows.Forms.ToolStripMenuItem Menumovimentaçãoo;
         private System.Windows.Forms.ToolStripMenuItem entradassaidass;
         private System.Windows.Forms.ToolStripMenuItem despesass;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 
