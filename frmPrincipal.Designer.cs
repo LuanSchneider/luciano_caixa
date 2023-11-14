@@ -293,7 +293,7 @@ namespace luciano_caixa
             this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button3.Size = new System.Drawing.Size(166, 94);
             this.button3.TabIndex = 11;
-            this.button3.Text = "preço de produtos";
+            this.button3.Text = "preço de produto";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.UseVisualStyleBackColor = true;
             // 
