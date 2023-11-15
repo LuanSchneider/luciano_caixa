@@ -12,6 +12,10 @@ namespace luciano_caixa.cadastro
 {
     public partial class FrmCadastro : Form
     {
+        conexao con = new conexao();
+        //string  Sql;
+        //Myslconmand cmd;
+
         public FrmCadastro()
         {
             InitializeComponent();
@@ -20,6 +24,16 @@ namespace luciano_caixa.cadastro
         private void btns_Click(object sender, EventArgs e)
         {
             //MYSQL
+
+        }
+
+        private void btnn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnee_Click(object sender, EventArgs e)
+        {
 
         }
     }

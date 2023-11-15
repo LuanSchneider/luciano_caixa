@@ -162,7 +162,7 @@ namespace luciano_caixa.cadastro
             // btns
             // 
             this.btns.BackColor = System.Drawing.Color.SeaShell;
-            this.btns.Location = new System.Drawing.Point(-4, 428);
+            this.btns.Location = new System.Drawing.Point(12, 428);
             this.btns.Name = "btns";
             this.btns.Size = new System.Drawing.Size(75, 23);
             this.btns.TabIndex = 13;
@@ -179,6 +179,7 @@ namespace luciano_caixa.cadastro
             this.btnee.TabIndex = 14;
             this.btnee.Text = "Escluir";
             this.btnee.UseVisualStyleBackColor = false;
+            this.btnee.Click += new System.EventHandler(this.btnee_Click);
             // 
             // btne
             // 
@@ -197,8 +198,9 @@ namespace luciano_caixa.cadastro
             this.btnn.Name = "btnn";
             this.btnn.Size = new System.Drawing.Size(75, 23);
             this.btnn.TabIndex = 16;
-            this.btnn.Text = "Novo";
+            this.btnn.Text = "  novo";
             this.btnn.UseVisualStyleBackColor = false;
+            this.btnn.Click += new System.EventHandler(this.btnn_Click);
             // 
             // FrmCadastro
             // 
