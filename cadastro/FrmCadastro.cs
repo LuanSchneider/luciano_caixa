@@ -25,14 +25,13 @@ namespace luciano_caixa.cadastro
         {
             con.Abrirc();
 
-            Sql = "INSERT INTO funcionarios(nome,CPF,endereço,Data,telefone/whatsapp,cargo_do_funcionario,)VALUEs=@nome,@CPF,@endereço,@curDate(),@telefone/whatsapp,@cargo_do_funcionario,";
+            Sql = "INSERT INTO funcionarios(nome,CPF,endereço,telefone,cargo,)VALUEs=@nome,@CPF,@endereço,,@telefone,@cargo,";
             cmd = new MySqlCommand(Sql, con.con);
             cmd.Parameters.AddWithValue("@nome", textnome.Text);
             cmd.Parameters.AddWithValue("@CPF", textcpf.Text);
             cmd.Parameters.AddWithValue("@endereço", textendereço.Text);
-
-            cmd.Parameters.AddWithValue("@telefone/whatsapp", textendereço.Text);
-            cmd.Parameters.AddWithValue("@cargo_do_funcionario", cbcf.SelectedItem);
+            cmd.Parameters.AddWithValue("@telefone", textendereço.Text);
+            cmd.Parameters.AddWithValue("@cargo", cbcf.SelectedItem);
            
 
 

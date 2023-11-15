@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace luciano_caixa
 {
+
+
     class conexao
     {
         //conectivos para entrada de dados para aplicação
-        public string conec = "SERVER=localhost; DATABASE=pdv_d; UID=root; PWD=; PORT;";
+        public string conec = "SERVER=127.0.0.1; DATABASE=pdv_d; UID=root; PWD=; PORT=3306;";
         public MySqlConnection con = null;
 
         public void Abrirc()
@@ -24,6 +26,8 @@ namespace luciano_caixa
             con.Close();
             con.Dispose(); //fecha conexões abertas que não estão sendo utilizadas
             con.ClearAllPoolsAsync(); //LIMPEZA 
+
+
         }
     }
 }
