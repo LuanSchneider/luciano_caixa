@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +14,8 @@ namespace luciano_caixa.cadastro
     public partial class FrmCadastro : Form
     {
         conexao con = new conexao();
-        //string  Sql;
-        //Myslconmand cmd;
-
+        string  Sql;
+        MySqlCommand cmd;
         public FrmCadastro()
         {
             InitializeComponent();
@@ -23,18 +23,23 @@ namespace luciano_caixa.cadastro
 
         private void btns_Click(object sender, EventArgs e)
         {
-            //MYSQL
+            con.Abrirc();
 
-        }
+            Sql = "INSERT INTO funcionarios(nome,CPF,endereço,Data,telefone/whatsapp,cargo_do_funcionario,)VALUEs=@nome,@CPF,@endereço,@curDate(),@telefone/whatsapp,@cargo_do_funcionario,";
+            cmd = new MySqlCommand(Sql, con.con);
+            cmd.Parameters.AddWithValue("@nome", textnome.Text);
+            cmd.Parameters.AddWithValue("@CPF", textcpf.Text);
+            cmd.Parameters.AddWithValue("@endereço", textendereço.Text);
 
-        private void btnn_Click(object sender, EventArgs e)
-        {
+            cmd.Parameters.AddWithValue("@telefone/whatsapp", textendereço.Text);
+            cmd.Parameters.AddWithValue("@cargo_do_funcionario", cbcf.SelectedItem);
+           
 
-        }
 
-        private void btnee_Click(object sender, EventArgs e)
-        {
 
+
+            cmd.ExecuteNonQuery();
+            con.Fecharc();
         }
     }
 }

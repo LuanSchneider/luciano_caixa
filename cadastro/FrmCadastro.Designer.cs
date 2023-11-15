@@ -34,21 +34,19 @@ namespace luciano_caixa.cadastro
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textnome = new System.Windows.Forms.TextBox();
+            this.textendereço = new System.Windows.Forms.TextBox();
+            this.texttw = new System.Windows.Forms.TextBox();
+            this.cbcf = new System.Windows.Forms.ComboBox();
+            this.textcpf = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btns = new System.Windows.Forms.Button();
             this.btnee = new System.Windows.Forms.Button();
             this.btne = new System.Windows.Forms.Button();
             this.btnn = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+         
             // 
             // label1
             // 
@@ -62,7 +60,7 @@ namespace luciano_caixa.cadastro
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(629, 9);
+            this.label2.Location = new System.Drawing.Point(522, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 1;
@@ -89,56 +87,48 @@ namespace luciano_caixa.cadastro
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(335, 57);
+            this.label5.Location = new System.Drawing.Point(449, 29);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(111, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Cargo do funcionnario";
             // 
-            // label6
+            // textnome
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(711, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Foto (opcional)";
+            this.textnome.Location = new System.Drawing.Point(75, 22);
+            this.textnome.Name = "textnome";
+            this.textnome.Size = new System.Drawing.Size(162, 20);
+            this.textnome.TabIndex = 6;
             // 
-            // textBox1
+            // textendereço
             // 
-            this.textBox1.Location = new System.Drawing.Point(75, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 20);
-            this.textBox1.TabIndex = 6;
+            this.textendereço.Location = new System.Drawing.Point(93, 82);
+            this.textendereço.Name = "textendereço";
+            this.textendereço.Size = new System.Drawing.Size(162, 20);
+            this.textendereço.TabIndex = 7;
             // 
-            // textBox2
+            // texttw
             // 
-            this.textBox2.Location = new System.Drawing.Point(93, 82);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 20);
-            this.textBox2.TabIndex = 7;
+            this.texttw.Location = new System.Drawing.Point(128, 50);
+            this.texttw.Name = "texttw";
+            this.texttw.Size = new System.Drawing.Size(162, 20);
+            this.texttw.TabIndex = 8;
             // 
-            // textBox3
+            // cbcf
             // 
-            this.textBox3.Location = new System.Drawing.Point(128, 50);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(162, 20);
-            this.textBox3.TabIndex = 8;
+            this.cbcf.FormattingEnabled = true;
+            this.cbcf.Location = new System.Drawing.Point(566, 26);
+            this.cbcf.Name = "cbcf";
+            this.cbcf.Size = new System.Drawing.Size(121, 21);
+            this.cbcf.TabIndex = 9;
             // 
-            // comboBox1
+            // textcpf
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(452, 54);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 9;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(595, 25);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(87, 20);
-            this.textBox4.TabIndex = 10;
+            this.textcpf.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.textcpf.Location = new System.Drawing.Point(555, 75);
+            this.textcpf.Name = "textcpf";
+            this.textcpf.Size = new System.Drawing.Size(87, 20);
+            this.textcpf.TabIndex = 10;
             // 
             // dataGridView1
             // 
@@ -150,14 +140,6 @@ namespace luciano_caixa.cadastro
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(803, 220);
             this.dataGridView1.TabIndex = 11;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(699, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 90);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
             // 
             // btns
             // 
@@ -179,7 +161,6 @@ namespace luciano_caixa.cadastro
             this.btnee.TabIndex = 14;
             this.btnee.Text = "Escluir";
             this.btnee.UseVisualStyleBackColor = false;
-            this.btnee.Click += new System.EventHandler(this.btnee_Click);
             // 
             // btne
             // 
@@ -200,7 +181,14 @@ namespace luciano_caixa.cadastro
             this.btnn.TabIndex = 16;
             this.btnn.Text = "  novo";
             this.btnn.UseVisualStyleBackColor = false;
-            this.btnn.Click += new System.EventHandler(this.btnn_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(37, 10);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(8, 15);
+            this.button2.TabIndex = 18;
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // FrmCadastro
             // 
@@ -208,18 +196,17 @@ namespace luciano_caixa.cadastro
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnn);
             this.Controls.Add(this.btne);
             this.Controls.Add(this.btnee);
             this.Controls.Add(this.btns);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textcpf);
+            this.Controls.Add(this.cbcf);
+            this.Controls.Add(this.texttw);
+            this.Controls.Add(this.textendereço);
+            this.Controls.Add(this.textnome);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -228,7 +215,6 @@ namespace luciano_caixa.cadastro
             this.Name = "FrmCadastro";
             this.Text = "x";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,17 +227,16 @@ namespace luciano_caixa.cadastro
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textnome;
+        private System.Windows.Forms.TextBox textendereço;
+        private System.Windows.Forms.TextBox texttw;
+        private System.Windows.Forms.ComboBox cbcf;
+        private System.Windows.Forms.TextBox textcpf;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btns;
         private System.Windows.Forms.Button btnee;
         private System.Windows.Forms.Button btne;
         private System.Windows.Forms.Button btnn;
+        private System.Windows.Forms.Button button2;
     }
 }

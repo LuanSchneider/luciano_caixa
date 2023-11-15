@@ -10,21 +10,23 @@ namespace luciano_caixa
     class conexao
     {
         //conectivos para entrada de dados para aplicação
-        public string conec = "SERVER=localhost; DATABASE=PDV_D; UID=root PWD=;port;";
+        public string conec = "SERVER=localhost; DATABASE=pdv_d; UID=root; PWD=; PORT;";
         public MySqlConnection con = null;
-     public void Abrirc()
+
+        public void Abrirc()
         {
             con = new MySqlConnection(conec);
             con.Open();
         }
-       public void Fecharc()
-        { 
-            con = new MySqlConnection(conec);
-            con.Close();
-            con.Dispose(); //fecha coneXOES ABERTAS QUE NÃO ESTÃO SEMDO UTILIZADASA
-            con.ClearAllPoolsAsync(); //LIMPEZA 
 
+        public void Fecharc()
+        {
+            con.Close();
+            con.Dispose(); //fecha conexões abertas que não estão sendo utilizadas
+            con.ClearAllPoolsAsync(); //LIMPEZA 
         }
     }
-
 }
+
+
+
