@@ -17,6 +17,10 @@ namespace luciano_caixa.cadastro
             InitializeComponent();
         }
 
-       
+        private void btns_Click(object sender, EventArgs e)
+        {
+            //MYSQL
+
+        }
     }
 }
