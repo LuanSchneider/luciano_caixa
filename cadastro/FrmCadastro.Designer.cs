@@ -168,6 +168,7 @@ namespace luciano_caixa.cadastro
             this.btns.TabIndex = 13;
             this.btns.Text = "salvar";
             this.btns.UseVisualStyleBackColor = false;
+            this.btns.Click += new System.EventHandler(this.btns_Click);
             // 
             // btnee
             // 
@@ -223,7 +224,7 @@ namespace luciano_caixa.cadastro
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrmCadastro";
-            this.Text = "funcionarios";
+            this.Text = "x";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
