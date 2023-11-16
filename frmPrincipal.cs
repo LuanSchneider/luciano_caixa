@@ -25,7 +25,7 @@ namespace luciano_caixa
         private void Menufuncionario_Click(object sender, EventArgs e)
         {
             cadastro.FrmCadastro frm = new cadastro.FrmCadastro();
-            frm.ShowDialog();
+            frm.Show();
 
         }
 

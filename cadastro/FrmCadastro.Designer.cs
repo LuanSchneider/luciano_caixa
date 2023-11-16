@@ -1,4 +1,6 @@
 ﻿
+using System.ComponentModel;
+
 namespace luciano_caixa.cadastro
 {
     partial class FrmCadastro
@@ -46,7 +48,7 @@ namespace luciano_caixa.cadastro
             this.btnn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-         
+            this.SuspendLayout();
             // 
             // label1
             // 
@@ -138,7 +140,7 @@ namespace luciano_caixa.cadastro
             this.dataGridView1.Location = new System.Drawing.Point(-4, 202);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(803, 220);
+            this.dataGridView1.Size = new System.Drawing.Size(802, 220);
             this.dataGridView1.TabIndex = 11;
             // 
             // btns
@@ -195,7 +197,7 @@ namespace luciano_caixa.cadastro
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(689, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnn);
             this.Controls.Add(this.btne);
@@ -238,5 +240,11 @@ namespace luciano_caixa.cadastro
         private System.Windows.Forms.Button btne;
         private System.Windows.Forms.Button btnn;
         private System.Windows.Forms.Button button2;
+        private ISupportInitialize pictureBox1;
+
+        public FrmCadastro(ISupportInitialize pictureBox1)
+        {
+            this.pictureBox1 = pictureBox1;
+        }
     }
 }
