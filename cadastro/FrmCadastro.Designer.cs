@@ -62,7 +62,7 @@ namespace luciano_caixa.cadastro
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(522, 82);
+            this.label2.Location = new System.Drawing.Point(416, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 1;
@@ -89,7 +89,7 @@ namespace luciano_caixa.cadastro
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(449, 29);
+            this.label5.Location = new System.Drawing.Point(382, 22);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(111, 13);
             this.label5.TabIndex = 4;
@@ -119,7 +119,7 @@ namespace luciano_caixa.cadastro
             // cbcf
             // 
             this.cbcf.FormattingEnabled = true;
-            this.cbcf.Location = new System.Drawing.Point(566, 26);
+            this.cbcf.Location = new System.Drawing.Point(490, 19);
             this.cbcf.Name = "cbcf";
             this.cbcf.Size = new System.Drawing.Size(121, 21);
             this.cbcf.TabIndex = 9;
@@ -127,7 +127,7 @@ namespace luciano_caixa.cadastro
             // textcpf
             // 
             this.textcpf.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.textcpf.Location = new System.Drawing.Point(555, 75);
+            this.textcpf.Location = new System.Drawing.Point(449, 71);
             this.textcpf.Name = "textcpf";
             this.textcpf.Size = new System.Drawing.Size(87, 20);
             this.textcpf.TabIndex = 10;
@@ -197,7 +197,7 @@ namespace luciano_caixa.cadastro
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(689, 450);
+            this.ClientSize = new System.Drawing.Size(630, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnn);
             this.Controls.Add(this.btne);
@@ -216,6 +216,7 @@ namespace luciano_caixa.cadastro
             this.Controls.Add(this.label1);
             this.Name = "FrmCadastro";
             this.Text = "x";
+            this.Load += new System.EventHandler(this.FrmCadastro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

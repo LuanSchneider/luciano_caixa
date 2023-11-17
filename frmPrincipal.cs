@@ -25,14 +25,14 @@ namespace luciano_caixa
         private void Menufuncionario_Click(object sender, EventArgs e)
         {
             cadastro.FrmCadastro frm = new cadastro.FrmCadastro();
-            frm.Show();
+            frm.ShowDialog();
 
         }
 
         private void Menuprodutos_Click(object sender, EventArgs e)
         {
             produtos.frmprodutos frm = new produtos.frmprodutos();
-            frm.Show();
+            frm.ShowDialog();
         }
     }
 }
