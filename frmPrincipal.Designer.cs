@@ -73,7 +73,7 @@ namespace luciano_caixa
             this.sair});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1521, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -288,7 +288,7 @@ namespace luciano_caixa
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(301, 261);
+            this.button3.Location = new System.Drawing.Point(301, 292);
             this.button3.Name = "button3";
             this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button3.Size = new System.Drawing.Size(166, 94);
@@ -302,7 +302,7 @@ namespace luciano_caixa
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1521, 668);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -315,6 +315,7 @@ namespace luciano_caixa
             this.Name = "frmprincipa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "    ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

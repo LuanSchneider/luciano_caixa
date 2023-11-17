@@ -41,6 +41,11 @@ namespace luciano_caixa.cadastro
 
         private void btns_Click(object sender, EventArgs e)
         {
+
+            if (textnome.Text.ToString().Trim() == "")
+                MessageBox.Show("preencha todos os campos", "cadastro dos funcionarios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            textnome.Text = "";
+            textnome.Focus();
             cn.Open();
             string insert= "INSERT INTO funcionarios(NOME,CPF,ENDEREÇO,TELEFONE,CARGO)values(@nome,@CPF,@endereço,@telefone,@cargo)";
 

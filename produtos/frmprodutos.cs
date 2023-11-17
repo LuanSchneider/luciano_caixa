@@ -16,5 +16,7 @@ namespace luciano_caixa.produtos
         {
             InitializeComponent();
         }
+
+
     }
 }

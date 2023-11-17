@@ -80,6 +80,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>frmPrincipal1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="produtos\frmprodutos.resx">
+      <DependentUpon>frmprodutos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
