@@ -13,19 +13,19 @@ namespace luciano_caixa.cadastro
 {
     public partial class FrmCadastro : Form
     {
-      
+
         public FrmCadastro()
         {
             InitializeComponent();
         }
         static string funcionarios = "SERVER=127.0.0.1; PORT=3306;DATABASE=pdv_d;UID=root;PASSAWORDS=;";
-      
+
         MySqlConnection cn = new MySqlConnection(funcionarios);
         private void FrmCadastro_Load(object sender, EventArgs e)
         {
-             dataGridView1.DataSource = llenar_grid();
+            dataGridView1.DataSource = llenar_grid();
         }
-       
+
         public DataTable llenar_grid()
         {
             cn.Open();
@@ -33,8 +33,8 @@ namespace luciano_caixa.cadastro
             string llener = "SELECT * FROM funcionarios";
             MySqlCommand cmd = new MySqlCommand(llener, cn);
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-             da.Fill(dt);
-             cn.Close();
+            da.Fill(dt);
+            cn.Close();
 
             return (dt);
         }
@@ -43,18 +43,28 @@ namespace luciano_caixa.cadastro
         {
 
             if (textnome.Text.ToString().Trim() == "")
-                MessageBox.Show("preencha todos os campos", "cadastro dos funcionarios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            textnome.Text = "";
-            textnome.Focus();
+            {
+                MessageBox.Show("preencha todos os campos", "cadastro dos funcionarios", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textnome.Text = "";
+                textnome.Focus();
+                return;
+            }
+            if (textcpfm.Text == "  .   .   . -" || textcpfm.Text.Length < 25)
+            {
+                MessageBox.Show("prenencha o campo de CPF", "cadastro dos funcionarios", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textcpfm.Focus();
+                return;
+            }
+           
             cn.Open();
             string insert= "INSERT INTO funcionarios(NOME,CPF,ENDEREÇO,TELEFONE,CARGO)values(@nome,@CPF,@endereço,@telefone,@cargo)";
 
 
             MySqlCommand cmd = new MySqlCommand(insert,cn);
             cmd.Parameters.AddWithValue("@nome", textnome.Text);
-            cmd.Parameters.AddWithValue("@CPF", textcpf.Text);
+            cmd.Parameters.AddWithValue("@CPF", textcpfm.Text);            
             cmd.Parameters.AddWithValue("@endereço", textendereço.Text);
-            cmd.Parameters.AddWithValue("@telefone", texttw.Text);
+            cmd.Parameters.AddWithValue("@telefone", textphone.Text);  
             cmd.Parameters.AddWithValue("@cargo", cbcf.Text);
             cmd.ExecuteNonQuery();
             cn.Close();

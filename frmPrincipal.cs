@@ -34,6 +34,8 @@ namespace luciano_caixa
             produtos.frmprodutos frm = new produtos.frmprodutos();
             frm.ShowDialog();
         }
+
+    
     }
 }
 

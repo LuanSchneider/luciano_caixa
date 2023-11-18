@@ -38,15 +38,15 @@ namespace luciano_caixa.cadastro
             this.label5 = new System.Windows.Forms.Label();
             this.textnome = new System.Windows.Forms.TextBox();
             this.textendereço = new System.Windows.Forms.TextBox();
-            this.texttw = new System.Windows.Forms.TextBox();
             this.cbcf = new System.Windows.Forms.ComboBox();
-            this.textcpf = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btns = new System.Windows.Forms.Button();
             this.btnee = new System.Windows.Forms.Button();
             this.btne = new System.Windows.Forms.Button();
             this.btnn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.textcpfm = new System.Windows.Forms.MaskedTextBox();
+            this.textphone = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,13 +109,6 @@ namespace luciano_caixa.cadastro
             this.textendereço.Size = new System.Drawing.Size(162, 20);
             this.textendereço.TabIndex = 7;
             // 
-            // texttw
-            // 
-            this.texttw.Location = new System.Drawing.Point(128, 50);
-            this.texttw.Name = "texttw";
-            this.texttw.Size = new System.Drawing.Size(162, 20);
-            this.texttw.TabIndex = 8;
-            // 
             // cbcf
             // 
             this.cbcf.FormattingEnabled = true;
@@ -123,14 +116,6 @@ namespace luciano_caixa.cadastro
             this.cbcf.Name = "cbcf";
             this.cbcf.Size = new System.Drawing.Size(121, 21);
             this.cbcf.TabIndex = 9;
-            // 
-            // textcpf
-            // 
-            this.textcpf.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.textcpf.Location = new System.Drawing.Point(449, 71);
-            this.textcpf.Name = "textcpf";
-            this.textcpf.Size = new System.Drawing.Size(87, 20);
-            this.textcpf.TabIndex = 10;
             // 
             // dataGridView1
             // 
@@ -192,21 +177,37 @@ namespace luciano_caixa.cadastro
             this.button2.TabIndex = 18;
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // textcpfm
+            // 
+            this.textcpfm.Location = new System.Drawing.Point(458, 75);
+            this.textcpfm.Mask = "000.000.000-00";
+            this.textcpfm.Name = "textcpfm";
+            this.textcpfm.Size = new System.Drawing.Size(100, 20);
+            this.textcpfm.TabIndex = 19;
+            // 
+            // textphone
+            // 
+            this.textphone.Location = new System.Drawing.Point(131, 53);
+            this.textphone.Mask = "(99) 00000-0000";
+            this.textphone.Name = "textphone";
+            this.textphone.Size = new System.Drawing.Size(100, 20);
+            this.textphone.TabIndex = 20;
+            // 
             // FrmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(630, 450);
+            this.Controls.Add(this.textphone);
+            this.Controls.Add(this.textcpfm);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnn);
             this.Controls.Add(this.btne);
             this.Controls.Add(this.btnee);
             this.Controls.Add(this.btns);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textcpf);
             this.Controls.Add(this.cbcf);
-            this.Controls.Add(this.texttw);
             this.Controls.Add(this.textendereço);
             this.Controls.Add(this.textnome);
             this.Controls.Add(this.label5);
@@ -232,9 +233,7 @@ namespace luciano_caixa.cadastro
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textnome;
         private System.Windows.Forms.TextBox textendereço;
-        private System.Windows.Forms.TextBox texttw;
         private System.Windows.Forms.ComboBox cbcf;
-        private System.Windows.Forms.TextBox textcpf;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btns;
         private System.Windows.Forms.Button btnee;
@@ -247,5 +246,8 @@ namespace luciano_caixa.cadastro
         {
             this.pictureBox1 = pictureBox1;
         }
+
+        private System.Windows.Forms.MaskedTextBox textcpfm;
+        private System.Windows.Forms.MaskedTextBox textphone;
     }
 }

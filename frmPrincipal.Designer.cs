@@ -65,6 +65,7 @@ namespace luciano_caixa
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.Tan;
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Menu1,
             this.Menu2,
@@ -73,7 +74,7 @@ namespace luciano_caixa
             this.sair});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1521, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1924, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -148,8 +149,9 @@ namespace luciano_caixa
             this.MenulançarVenda,
             this.Menuentradasaida,
             this.Menudespesas});
+            this.Menu3.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Menu3.Name = "Menu3";
-            this.Menu3.Size = new System.Drawing.Size(99, 20);
+            this.Menu3.Size = new System.Drawing.Size(102, 20);
             this.Menu3.Text = "Movimentação";
             // 
             // MenufluxoCaixa
@@ -191,31 +193,31 @@ namespace luciano_caixa
             // Menuprodutoss
             // 
             this.Menuprodutoss.Name = "Menuprodutoss";
-            this.Menuprodutoss.Size = new System.Drawing.Size(156, 22);
+            this.Menuprodutoss.Size = new System.Drawing.Size(180, 22);
             this.Menuprodutoss.Text = "produtos";
             // 
             // Menuvendass
             // 
             this.Menuvendass.Name = "Menuvendass";
-            this.Menuvendass.Size = new System.Drawing.Size(156, 22);
+            this.Menuvendass.Size = new System.Drawing.Size(180, 22);
             this.Menuvendass.Text = "vendas";
             // 
             // Menumovimentaçãoo
             // 
             this.Menumovimentaçãoo.Name = "Menumovimentaçãoo";
-            this.Menumovimentaçãoo.Size = new System.Drawing.Size(156, 22);
+            this.Menumovimentaçãoo.Size = new System.Drawing.Size(180, 22);
             this.Menumovimentaçãoo.Text = "movimentação";
             // 
             // entradassaidass
             // 
             this.entradassaidass.Name = "entradassaidass";
-            this.entradassaidass.Size = new System.Drawing.Size(156, 22);
+            this.entradassaidass.Size = new System.Drawing.Size(180, 22);
             this.entradassaidass.Text = "entradas/saidas";
             // 
             // despesass
             // 
             this.despesass.Name = "despesass";
-            this.despesass.Size = new System.Drawing.Size(156, 22);
+            this.despesass.Size = new System.Drawing.Size(180, 22);
             this.despesass.Text = "despesas";
             // 
             // sair
@@ -234,7 +236,7 @@ namespace luciano_caixa
             // pictureBox1
             // 
             this.pictureBox1.Image = global::luciano_caixa.Properties.Resources.WhatsApp_Image_2023_11_02_at_20_391;
-            this.pictureBox1.Location = new System.Drawing.Point(663, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(1787, 27);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(137, 127);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -257,10 +259,10 @@ namespace luciano_caixa
             this.button1.Cursor = System.Windows.Forms.Cursors.Default;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(387, 161);
+            this.button1.Location = new System.Drawing.Point(958, 213);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(80, 94);
+            this.button1.Size = new System.Drawing.Size(140, 139);
             this.button1.TabIndex = 9;
             this.button1.Text = "Caixa\r\n";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -273,9 +275,9 @@ namespace luciano_caixa
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button2.Cursor = System.Windows.Forms.Cursors.Default;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(301, 175);
+            this.button2.Location = new System.Drawing.Point(814, 213);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 80);
+            this.button2.Size = new System.Drawing.Size(138, 139);
             this.button2.TabIndex = 10;
             this.button2.Text = "estoque";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -288,10 +290,10 @@ namespace luciano_caixa
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(301, 292);
+            this.button3.Location = new System.Drawing.Point(814, 358);
             this.button3.Name = "button3";
             this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button3.Size = new System.Drawing.Size(166, 94);
+            this.button3.Size = new System.Drawing.Size(284, 94);
             this.button3.TabIndex = 11;
             this.button3.Text = "preço de produto";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -302,7 +304,7 @@ namespace luciano_caixa
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(1521, 668);
+            this.ClientSize = new System.Drawing.Size(1924, 931);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
