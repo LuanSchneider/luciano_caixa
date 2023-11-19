@@ -49,13 +49,20 @@ namespace luciano_caixa.cadastro
                 textnome.Focus();
                 return;
             }
-            if (textcpfm.Text == "  .   .   . -" || textcpfm.Text.Length < 25)
+            if (textcpfm.Text == "   ,   ,   -" || textcpfm.Text.Length <14)
             {
                 MessageBox.Show("prenencha o campo de CPF", "cadastro dos funcionarios", MessageBoxButtons.OK, MessageBoxIcon.Information);
+              
                 textcpfm.Focus();
                 return;
             }
-           
+            if (textphone.Text == "(  )      -" || textphone.Text.Length <11 ) ;
+            { 
+                MessageBox.Show("prenencha o campo de Telefone", "cadastro dos funcionarios", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                textphone.Focus();
+                return;
+            }
             cn.Open();
             string insert= "INSERT INTO funcionarios(NOME,CPF,ENDEREÇO,TELEFONE,CARGO)values(@nome,@CPF,@endereço,@telefone,@cargo)";
 
