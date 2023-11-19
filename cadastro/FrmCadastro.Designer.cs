@@ -158,6 +158,7 @@ namespace luciano_caixa.cadastro
             this.btne.TabIndex = 15;
             this.btne.Text = "Editar";
             this.btne.UseVisualStyleBackColor = false;
+            this.btne.Click += new System.EventHandler(this.btne_Click);
             // 
             // btnn
             // 
